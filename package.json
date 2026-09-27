@@ -1,0 +1,31 @@
+{
+  "name": "threadsandgems-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend API for the Threads & Gems store and admin",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js",
+    "make-super-admin": "node scripts/make-super-admin.js"
+  },
+  "dependencies": {
+    "@clerk/express": "^1.7.0",
+    "cloudinary": "^2.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.9.0",
+    "morgan": "^1.10.0",
+    "stripe": "^22.6.1",
+    "zod": "^3.24.1"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+}
